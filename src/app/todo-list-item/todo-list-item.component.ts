@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OutPut, EventEmiter } from '@angular/core';
 import { Todo } from '../todo';
 
 @Component({
@@ -6,7 +6,7 @@ import { Todo } from '../todo';
   templateUrl: './todo-list-item.component.html',
   styleUrls: ['./todo-list-item.component.css']
 })
-export class TodoListItemComponent implements OnInit {
+export class TodoListItemComponent {
 
   @Input() todo: Todo;
 
